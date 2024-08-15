@@ -1,0 +1,17 @@
+{
+    "private": true,
+    "scripts": {
+        "format": "biome check --write .",
+        "tsc": "cd ./package && tsc --noEmit",
+        "build": "cd ./package && tsup",
+        "test": "cd test && pnpm run test",
+        "": ""
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^1.8.3",
+        "@swc/core": "^1.7.11",
+        "@types/node": "^22.3.0",
+        "tsup": "^8.2.4",
+        "typescript": "^5.5.4"
+    }
+}

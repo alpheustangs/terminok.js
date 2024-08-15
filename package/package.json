@@ -1,0 +1,35 @@
+{
+    "name": "terminok",
+    "version": "0.1.0",
+    "description": "A terminal logging solution",
+    "keywords": [
+        "terminok",
+        "terminal",
+        "console",
+        "log",
+        "ts",
+        "TypeScript",
+        "js",
+        "JavaScript"
+    ],
+    "homepage": "https://github.com/alpheustangs/terminok.js",
+    "bugs": "https://github.com/alpheustangs/terminok.js/issues",
+    "license": "MIT",
+    "author": "Alpheus Tang",
+    "files": ["dist"],
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alpheustangs/terminok.js.git",
+        "directory": "package"
+    }
+}
