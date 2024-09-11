@@ -28,7 +28,7 @@ const formatter = ({
 }) => {
     return config.format
         ? config.format(options)
-        : `- [${options.time}][${options.title}] ${options.content}`;
+        : `- [${options.time}] [${options.title}] ${options.content}`;
 };
 
 const generate = (options: GenerateOptions): GenerateResult => {

@@ -61,7 +61,7 @@ type ConfigBase = {
     parser: (content: unknown[]) => string;
     /**
      * Customize the log format.
-     * @default `- [${time}][${title}] ${content}`
+     * @default `- [${time}] [${title}] ${content}`
      */
     format: (data: FormatData) => string;
     /**

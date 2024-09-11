@@ -87,7 +87,7 @@ const log: Client<typeof SCHEMA_DEFAULT> = createClient({
     }
 });
 
-log.info("Hello"); // - [info] Hello
+log.info("Hello");
 ```
 
 ### What If I Set `onDone`/`onTrigger` Config on Both Config and Schema
