@@ -9,7 +9,7 @@ type PrintOptions = {
 const print = (options: PrintOptions): void => {
     const config: Config = options.config;
     const log: GenerateResult = options.log;
-    return config.logger?.(log.raw) ?? console.log(log.raw);
+    config.logger?.(log.raw) ?? console.log(log.raw);
 };
 
 export type { PrintOptions };
