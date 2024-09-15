@@ -25,6 +25,10 @@
             },
             "style": {
                 "noInferrableTypes": "off"
+            },
+            "suspicious": {
+                "noExplicitAny": "off",
+                "useValidTypeof": "off"
             }
         }
     },

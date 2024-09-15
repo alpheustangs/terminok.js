@@ -35,7 +35,7 @@ const output = async (options: OutputOptions): Promise<boolean> => {
             fs = await import("node:fs");
             fsp = await import("node:fs/promises");
         } catch (e: unknown) {
-            if (process.env.NODE_ENV === "development") {
+            if (process.env.NODE_ENV !== "production") {
                 throw new Error("Node.js is required to output the log");
             }
 
@@ -51,6 +51,7 @@ const output = async (options: OutputOptions): Promise<boolean> => {
 
         const fileName: string = output.fileName ?? "terminok";
         const filePath: string = path.join(outDir, `${fileName}.log`);
+        const content: string = `${log}\n`;
 
         // file
         if (fs.existsSync(filePath)) {
@@ -82,16 +83,16 @@ const output = async (options: OutputOptions): Promise<boolean> => {
                     path.join(outDir, `${fileName}_${logDate}.log`),
                 );
 
-                await fsp.writeFile(filePath, `${log}\n`);
+                await fsp.writeFile(filePath, content);
             }
             // file exists and under the max size, append to file
             else {
-                await fsp.appendFile(filePath, `${log}\n`);
+                await fsp.appendFile(filePath, content);
             }
         }
         // file not exists, create new one
         else {
-            await fsp.writeFile(filePath, `${log}\n`);
+            await fsp.writeFile(filePath, content);
         }
 
         return true;

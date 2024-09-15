@@ -2,7 +2,6 @@ import type { Config } from "#/@types/config";
 import type { SchemaLogConfig } from "#/base/main";
 
 type ValidateOptions = {
-    // biome-ignore lint/suspicious/noExplicitAny: allow any
     target: any;
     name: string;
     type:
@@ -22,7 +21,6 @@ const validate = (options: ValidateOptions): void => {
 
     if (!required && typeof target === "undefined") return void 0;
 
-    // biome-ignore lint/suspicious/useValidTypeof: allow typeof
     if (typeof target !== type) {
         const _type: string =
             type === "object" || type === "undefined"
