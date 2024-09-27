@@ -2,7 +2,10 @@
 
 A terminal logging solution.
 
-Terminok is a logging solution that outputs colorful logs to the terminal or saves them to a file. It supports both web and Node environments, with additional runtime compatibility based on your configuration.
+Terminok is a logging solution that outputs 
+colorful logs to the terminal or saves them to a file. 
+It supports both web and Node environments, 
+with additional runtime compatibility based on your configuration.
 
 ## Installation
 
@@ -56,11 +59,14 @@ log.ping("pong");
 
 ## What If
 
-Terminok provides a highly customizable config and schema, so you can create your own logger easily. But you may meet some problems during the creation.
+Terminok provides a highly customizable config and schema, 
+so you can create your own logger easily. 
+But you may meet some problems during the creation.
 
 ### What If the Schema Is Empty
 
-If the schema is empty, it will return nothing as a result. So you should import the default schema or create your own schema.
+If the schema is empty, it will return nothing as a result. 
+So you should import the default schema or create your own schema.
 
 ```typescript
 import { createClient } from "terminok";
@@ -72,7 +78,8 @@ const log = createClient();
 
 ### What If I Want to Customize How the Log Will Be Displayed
 
-To customize how the log will be displayed, you may edit `format` parameter in config to customize the output.
+To customize how the log will be displayed, 
+you may edit `format` parameter in config to customize the output.
 
 ```typescript
 import type { Client, FormatData } from "terminok";
@@ -92,7 +99,9 @@ log.info("Hello");
 
 ### What If I Set `onDone`/`onTrigger` Config on Both Config and Schema
 
-If you set `onDone`/`onTrigger` on both config and schema, both of them will be executed. And the `onDone`/`onTrigger` function in `config` will be executed first.
+If you set `onDone`/`onTrigger` on both config and schema, 
+both of them will be executed. 
+And the `onDone`/`onTrigger` function in `config` will be executed first.
 
 ```typescript
 import type { Client, Schema } from "terminok";
@@ -120,7 +129,9 @@ const log: Client<typeof customSchema> = createClient({
 
 ### What If I Set `output` Config on Both `config` and `schema`
 
-If you set `output` on both config and schema, the `output` config in `config` will be overrided by the `output` config in `schema`.
+If you set `output` on both config and schema, 
+the `output` config in `config` will be 
+overrided by the `output` config in `schema`.
 
 ```typescript
 import type { Client, Schema } from "terminok";
@@ -155,7 +166,9 @@ await log.ping2("pong").toFile(); // run with schema `output` settings
 
 ### What If the `toFile()` Function Triggered in Web
 
-While Terminok supports both web and Node.js environments, the `toFile()` function is exclusive for Node.js environments by default. Using `toFile()` in web will lead to an error.
+While Terminok supports both web and Node.js environments, 
+the `toFile()` function is exclusive for Node.js environments by default. 
+Using `toFile()` in web will lead to an error.
 
 ```typescript
 import type { Client } from "terminok";
@@ -172,4 +185,5 @@ await log.info("Hello").toFile();
 
 ## License
 
-This project is MIT licensed, you can find the license file [here](./LICENSE).
+This project is MIT licensed, 
+you can find the license file [here](./LICENSE).
