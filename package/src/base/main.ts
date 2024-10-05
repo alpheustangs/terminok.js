@@ -112,7 +112,7 @@ const createClient = <
     /**
      * The schema to be used.
      * If not specified, nothing will be returned.
-     * You can use the default schema by importing `SCHEMA_DEFAULT`.
+     * To use the default schema, import `SCHEMA_DEFAULT`.
      *
      * ## Example
      *
@@ -152,8 +152,8 @@ const createClient = <
     schema?: ClientSchema;
     /**
      * Whether to validate the config and schema.
-     * You may set it to `false` if you are using TypeScript
-     * and you want to improve the performance
+     * Set it to `false` if using TypeScript
+     * and tend to improve the performance
      * by **NOT** validating both config and schema.
      * @default true
      */

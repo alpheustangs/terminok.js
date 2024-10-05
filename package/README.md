@@ -2,11 +2,11 @@
 
 A terminal logging solution. 
 
-Terminok is a logging solution that outputs colorful logs to the terminal or saves them to a file. It supports both web and Node environments, with additional runtime compatibility based on your configuration.
+Terminok is a logging solution that outputs colorful logs to the terminal or saves them to a file. It supports both web and Node environments, with additional runtime compatibility based on the configuration.
 
 ## Quick Start
 
-You may create a client with default schema as follows:
+Create a client with default schema as follows:
 
 ```typescript
 import type { Client } from "terminok";
@@ -19,7 +19,7 @@ const log: Client<typeof SCHEMA_DEFAULT> = createClient({
 log.info("Hello");
 ```
 
-Or create your own schema with the following code:
+Or create a custom schema with the following code:
 
 ```typescript
 import type { Client, Schema } from "terminok";

@@ -10,8 +10,8 @@ type Delete<Type, DeleteKey extends keyof Type> = {
 };
 
 /**
- * You may choose between `utc` and `local` time zone.
- * Or select a specific time zone by using a number from `-12` to `12`.
+ * Choose between `utc` and `local` time zone,
+ * or select a specific time zone by using a number from `-12` to `12`.
  */
 type TimeZone = "utc" | "local" | number;
 
