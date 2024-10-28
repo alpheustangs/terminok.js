@@ -9,7 +9,7 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^1.9.4",
-        "@swc/core": "^1.7.39",
+        "@swc/core": "^1.7.40",
         "@types/node": "^22.8.1",
         "tsup": "^8.3.5",
         "typescript": "^5.6.3"
