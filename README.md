@@ -177,4 +177,4 @@ await log.info("Hello").toFile();
 
 ## License
 
-This project is MIT licensed, you can find the license file [here](./LICENSE).
+This project is licensed under the terms of the MIT license.
