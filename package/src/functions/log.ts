@@ -56,7 +56,7 @@ const createLog = (options: LogOptions) => {
          *
          * ## Example
          *
-         * ```typescript
+         * ```ts
          * import type {
          *     Client,
          *     LogResult,
@@ -92,7 +92,7 @@ const createLog = (options: LogOptions) => {
          *
          * ## Example
          *
-         * ```typescript
+         * ```ts
          * import type { Client } from "terminok";
          * import { createClient, SCHEMA_DEFAULT } from "terminok";
          *
@@ -114,7 +114,7 @@ const createLog = (options: LogOptions) => {
          *
          * ## Example
          *
-         * ```typescript
+         * ```ts
          * import type {
          *     Client,
          *     Schema,

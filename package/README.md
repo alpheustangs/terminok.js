@@ -8,7 +8,7 @@ Terminok is a logging solution that outputs colorful logs to the terminal or sav
 
 Create a client with default schema as follows:
 
-```typescript
+```ts
 import type { Client } from "terminok";
 import { createClient, SCHEMA_DEFAULT } from "terminok";
 
@@ -21,7 +21,7 @@ log.info("Hello");
 
 Or create a custom schema with the following code:
 
-```typescript
+```ts
 import type { Client, Schema } from "terminok";
 import { createClient, COLORS } from "terminok";
 

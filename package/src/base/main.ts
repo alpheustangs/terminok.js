@@ -71,7 +71,7 @@ type Client<T extends readonly SchemaLogConfig[]> = {
  *
  * ## Example
  *
- * ```typescript
+ * ```ts
  * import type { Client } from "terminok";
  * import { createClient, SCHEMA_DEFAULT } from "terminok";
  *
@@ -91,7 +91,7 @@ const createClient = <
      *
      * ## Example
      *
-     * ```typescript
+     * ```ts
      * import type { Client, Config } from "terminok";
      * import { createClient, SCHEMA_DEFAULT } from "terminok";
      *
@@ -118,7 +118,7 @@ const createClient = <
      *
      * This example creates a client with the default schema.
      *
-     * ```typescript
+     * ```ts
      * import type { Client } from "terminok";
      * import { createClient, SCHEMA_DEFAULT } from "terminok";
      *
@@ -131,7 +131,7 @@ const createClient = <
      *
      * This example creates a client with the custom schema.
      *
-     * ```typescript
+     * ```ts
      * import type { Client, Schema } from "terminok";
      * import { createClient, COLORS } from "terminok";
      *

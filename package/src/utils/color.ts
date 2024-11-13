@@ -7,7 +7,7 @@ const addColor = (color: string, text: string): string => {
  *
  * ## Example
  *
- * ```typescript
+ * ```ts
  * import { COLORS } from "terminok";
  *
  * const redHello: string = COLORS.blue("hello");

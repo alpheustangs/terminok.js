@@ -6,21 +6,16 @@ Terminok is a logging solution that outputs colorful logs to the terminal or sav
 
 ## Installation
 
-npm:
+Install this package as a dependency in the project:
 
-```bash
+```sh
+# npm
 npm i terminok
-```
 
-Yarn:
-
-```bash
+# Yarn
 yarn add terminok
-```
 
-pnpm:
-
-```bash
+# pnpm
 pnpm add terminok
 ```
 
@@ -28,7 +23,7 @@ pnpm add terminok
 
 Create a client with default schema as follows:
 
-```typescript
+```ts
 import type { Client } from "terminok";
 import { createClient, SCHEMA_DEFAULT } from "terminok";
 
@@ -41,7 +36,7 @@ log.info("Hello");
 
 Or create a custom schema with the following code:
 
-```typescript
+```ts
 import type { Client, Schema } from "terminok";
 import { createClient, COLORS } from "terminok";
 
@@ -67,7 +62,7 @@ Terminok provides a highly customizable config and schema, so you can create you
 
 If the schema is empty, it will return nothing as a result. So you should import the default schema or create your own schema.
 
-```typescript
+```ts
 import { createClient } from "terminok";
 
 const log = createClient();
@@ -79,7 +74,7 @@ const log = createClient();
 
 To customize how the log will be displayed, you may edit `format` parameter in config to customize the output.
 
-```typescript
+```ts
 import type { Client, FormatData } from "terminok";
 import { createClient, SCHEMA_DEFAULT } from "terminok";
 
@@ -99,7 +94,7 @@ log.info("Hello");
 
 If you set `onDone`/`onTrigger` on both config and schema, both of them will be executed. And the `onDone`/`onTrigger` function in `config` will be executed first.
 
-```typescript
+```ts
 import type { Client, Schema } from "terminok";
 import { createClient, COLORS } from "terminok";
 
@@ -127,7 +122,7 @@ const log: Client<typeof customSchema> = createClient({
 
 If you set `output` on both config and schema, the `output` config in `config` will be overrided by the `output` config in `schema`.
 
-```typescript
+```ts
 import type { Client, Schema } from "terminok";
 import { createClient, COLORS } from "terminok";
 
@@ -162,7 +157,7 @@ await log.ping2("pong").toFile(); // run with schema `output` settings
 
 While Terminok supports both web and Node.js environments, the `toFile()` function is exclusive for Node.js environments by default. Using `toFile()` in web will lead to an error.
 
-```typescript
+```ts
 import type { Client } from "terminok";
 import { createClient, SCHEMA_DEFAULT } from "terminok";
 
