@@ -14,12 +14,13 @@
     ],
     "homepage": "https://github.com/alpheustangs/terminok.js",
     "bugs": "https://github.com/alpheustangs/terminok.js/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alpheustangs/terminok.js.git",
+        "directory": "package"
+    },
     "license": "MIT",
     "author": "Alpheus Tang",
-    "files": ["dist"],
-    "main": "./dist/index.js",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
@@ -27,9 +28,8 @@
             "require": "./dist/index.js"
         }
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/alpheustangs/terminok.js.git",
-        "directory": "package"
-    }
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": ["dist"]
 }

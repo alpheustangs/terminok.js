@@ -21,6 +21,7 @@ const validate = (options: ValidateOptions): void => {
 
     if (!required && typeof target === "undefined") return void 0;
 
+    // biome-ignore lint/suspicious/useValidTypeof: hack
     if (typeof target !== type) {
         const _type: string =
             type === "object" || type === "undefined"

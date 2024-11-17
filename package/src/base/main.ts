@@ -172,7 +172,7 @@ const createClient = <
     if (!options.schema) return result;
 
     for (let i: number = 0; i < options.schema.length; i++) {
-        const item: SchemaLogConfig = options.schema[i];
+        const item: SchemaLogConfig = options.schema[i] as SchemaLogConfig;
 
         result[item.key as LogKey] = (...content: unknown[]): Log => {
             return createLog({
