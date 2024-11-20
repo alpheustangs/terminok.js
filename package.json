@@ -5,6 +5,7 @@
         "tsc": "cd ./package && tsc --noEmit",
         "build": "cd ./package && tsup",
         "test": "cd test && pnpm run test",
+        "doc": "cd ./package && typedoc",
         "": ""
     },
     "devDependencies": {
@@ -14,6 +15,8 @@
         "@swc/core": "^1.9.2",
         "@types/node": "^22.9.1",
         "tsup": "^8.3.5",
+        "typedoc": "^0.26.11",
+        "typedoc-plugin-markdown": "^4.2.10",
         "typescript": "^5.6.3"
     },
     "engines": {

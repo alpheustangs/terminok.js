@@ -69,7 +69,7 @@ type Client<T extends readonly SchemaLogConfig[]> = {
 /**
  * This function creates a client with the given options.
  *
- * ## Example
+ * ### Example
  *
  * ```ts
  * import type { Client } from "terminok";
@@ -89,7 +89,7 @@ const createClient = <
     /**
      * The config to be used.
      *
-     * ## Example
+     * #### Example
      *
      * ```ts
      * import type { Client, Config } from "terminok";
@@ -114,7 +114,7 @@ const createClient = <
      * If not specified, nothing will be returned.
      * To use the default schema, import `SCHEMA_DEFAULT`.
      *
-     * ## Example
+     * #### Example
      *
      * This example creates a client with the default schema.
      *

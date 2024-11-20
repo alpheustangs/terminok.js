@@ -54,7 +54,7 @@ const createLog = (options: LogOptions) => {
         /**
          * Return the current log as different formats.
          *
-         * ## Example
+         * #### Example
          *
          * ```ts
          * import type {
@@ -90,7 +90,7 @@ const createLog = (options: LogOptions) => {
          * indicating whether the output is successful.
          * By default it will only works in Node environment.
          *
-         * ## Example
+         * #### Example
          *
          * ```ts
          * import type { Client } from "terminok";
@@ -112,7 +112,7 @@ const createLog = (options: LogOptions) => {
          * A boolean will be returned as a result,
          * indicating whether the function is successful.
          *
-         * ## Example
+         * #### Example
          *
          * ```ts
          * import type {

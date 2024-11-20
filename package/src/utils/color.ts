@@ -5,7 +5,7 @@ const addColor = (color: string, text: string): string => {
 /**
  * This object contains different functions to add colors to strings.
  *
- * ## Example
+ * ### Example
  *
  * ```ts
  * import { COLORS } from "terminok";

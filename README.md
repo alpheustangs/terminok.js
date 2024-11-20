@@ -54,6 +54,10 @@ const log: Client<typeof customSchema> = createClient({
 log.ping("pong");
 ```
 
+## Documentation
+
+For more information, please refer to the [documentation](./docs/README.md).
+
 ## What If
 
 Terminok provides a highly customizable config and schema, so you can create your own logger easily. But you may meet some problems during the creation.
