@@ -12,7 +12,7 @@
         "@apst/tsconfig": "~0.1.0",
         "@biomejs/biome": "^1.9.4",
         "@swc/core": "^1.9.2",
-        "@types/node": "^22.9.0",
+        "@types/node": "^22.9.1",
         "tsup": "^8.3.5",
         "typescript": "^5.6.3"
     },
