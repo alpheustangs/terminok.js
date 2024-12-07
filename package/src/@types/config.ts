@@ -1,13 +1,7 @@
+import type { Format, Omit } from "ts-vista";
+
 import type { LogResult } from "#/functions/log";
 import type { TimeData } from "#/functions/time";
-
-type Format<Type> = {
-    [Key in keyof Type]: Type[Key];
-};
-
-type Delete<Type, DeleteKey extends keyof Type> = {
-    [Key in keyof Type as Key extends DeleteKey ? never : Key]: Type[Key];
-};
 
 /**
  * Choose between `utc` and `local` time zone,
@@ -117,7 +111,7 @@ type OutputFunctionOptions = Format<
          * @default undefined
          */
         outDir?: string;
-    } & Delete<_OutputConfigBase, "outDir" | "isColorful"> & {
+    } & Omit<_OutputConfigBase, "outDir" | "isColorful"> & {
             /** The actual log. */
             log: string;
         }
@@ -147,7 +141,6 @@ type Config = Format<
 >;
 
 export type {
-    Format,
     TimeZone,
     FormatData,
     ExtraFunctionOptions,

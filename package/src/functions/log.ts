@@ -1,4 +1,6 @@
-import type { Config, Format } from "#/@types/config";
+import type { Format } from "ts-vista";
+
+import type { Config } from "#/@types/config";
 import type { SchemaLogConfig } from "#/base/main";
 import type { GenerateResult } from "#/functions/generate";
 

@@ -1,7 +1,8 @@
+import type { Format } from "ts-vista";
+
 import type {
     Config,
     ExtraFunctionOptions,
-    Format,
     OutputConfig,
 } from "#/@types/config";
 import type { Log } from "#/functions/log";
