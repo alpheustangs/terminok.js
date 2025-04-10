@@ -15,7 +15,7 @@
         "@types/node": "^18.19.86",
         "tsup": "^8.4.0",
         "typedoc": "~0.28.2",
-        "typedoc-plugin-markdown": "^4.6.1",
+        "typedoc-plugin-markdown": "^4.6.2",
         "typescript": "^5.8.3"
     },
     "engines": {
