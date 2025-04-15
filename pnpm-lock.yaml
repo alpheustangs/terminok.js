@@ -36,8 +36,8 @@ importers:
   package:
     dependencies:
       ts-vista:
-        specifier: ~0.1.0
-        version: 0.1.0
+        specifier: ~0.2.0
+        version: 0.2.0
 
   test:
     dependencies:
@@ -1085,8 +1085,8 @@ packages:
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
-  ts-vista@0.1.0:
-    resolution: {integrity: sha512-+9GTfFRnv1xvNl3DLdQ8kKdOHvyheUpGdHVI7H+aEKM48zDdhHZwkX4/BSBiLYfmIwsgbYHJMBjN3g7mhYf2vQ==}
+  ts-vista@0.2.0:
+    resolution: {integrity: sha512-1uSNTawRQ/0clp5iT6jZHNpsTaAnUC+eNi/CtsMcJily9Lyx/ucs99celkwJclyRY+0D4qfSEDWZFiiDUsv93w==}
 
   tsup@8.4.0:
     resolution: {integrity: sha512-b+eZbPCjz10fRryaAA7C8xlIHnf8VnsaRqydheLIqwG/Mcpfk8Z5zp3HayX7GaTygkigHl5cBUs+IhcySiIexQ==}
@@ -2049,7 +2049,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  ts-vista@0.1.0: {}
+  ts-vista@0.2.0: {}
 
   tsup@8.4.0(postcss@8.5.3)(typescript@5.8.3)(yaml@2.7.1):
     dependencies:
