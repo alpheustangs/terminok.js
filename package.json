@@ -13,7 +13,7 @@
         "@apst/tsconfig": "~0.1.0",
         "@biomejs/biome": "^1.9.4",
         "@types/node": "^18.19.100",
-        "tsup": "^8.4.0",
+        "tsup": "^8.5.0",
         "typedoc": "~0.28.4",
         "typedoc-plugin-markdown": "^4.6.3",
         "typescript": "^5.8.3"
